@@ -1,23 +1,23 @@
 # company database
 
-- [] add mysql folder to github
+- [x] add mysql folder to github
 
 ### create database tables
 
-- [] employee table
-- [] branch table
-- [] client table
-- [] works_with table
-- [] branch supplier table
+- [x] employee table
+- [x] branch table
+- [x] client table
+- [x] works_with table
+- [x] branch supplier table
 
 ### create manager & employee values
 
-- [] corporate branch values
-- [] scranton branch values
-- [] stamford branch values
+- [x] corporate branch values
+- [x] scranton branch values
+- [x] stamford branch values
 
 ### create database values
 
-- [] branch values
-- [] client values
-- [] works_with values
+- [x] branch values
+- [x] client values
+- [x] works_with values
