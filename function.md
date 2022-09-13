@@ -38,10 +38,17 @@ SELECT AVG(salary)
 FROM employee;
 ```
 
-- [] find the average salary of all male employees
+- [x] find the average salary of all male employees
 
 ```
 SELECT AVG(salary)
 FROM employee
 WHERE sex = 'M';
+```
+
+- [] find the sum of all employees salaries
+
+```
+SELECT SUM(salary)
+FROM employee;
 ```
