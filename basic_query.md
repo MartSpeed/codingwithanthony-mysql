@@ -29,3 +29,11 @@ SELECT *
 FROM employee
 ORDER BY sex, first_name, last_name;
 ```
+
+- [x] find the first 5 employees in the able
+
+```
+SELECT *
+FROM employee
+LIMIT 5;
+```
