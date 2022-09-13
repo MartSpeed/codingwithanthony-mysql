@@ -72,3 +72,11 @@ SELECT COUNT(sex), sex
 FROM employee
 GROUP BY sex;
 ```
+
+- [x] find the total sales of each salesman
+
+```
+SELECT SUM(total_sales), emp_id
+FROM works_with
+GROUP BY emp_id;
+```
