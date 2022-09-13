@@ -31,9 +31,17 @@ FROM employee
 WHERE sex = 'F' AND birth_day > '1970-01-01';
 ```
 
-- [] find the average salary of all employees
+- [x] find the average salary of all employees
 
 ```
 SELECT AVG(salary)
 FROM employee;
+```
+
+- [] find the average salary of all male employees
+
+```
+SELECT AVG(salary)
+FROM employee
+WHERE sex = 'M';
 ```
