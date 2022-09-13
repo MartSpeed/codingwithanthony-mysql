@@ -46,9 +46,17 @@ FROM employee;
 ```
 
 - [x] find the forename and surnames of all employees
-- used alias keyword AS to name the table
+- used the keyword AS to name the alias tables
 
 ```
 SELECT first_name AS forename, last_name AS surname
+FROM employee;
+```
+
+- [x] find out all of the different genders
+- DISTINCT keyword used, what are the particular values that are stored in a specific column
+
+```
+SELECT DISTINCT sex
 FROM employee;
 ```
