@@ -37,3 +37,10 @@ SELECT *
 FROM employee
 LIMIT 5;
 ```
+
+- [] find the first and last name of all employees
+
+```
+SELECT first_name, last_name
+FROM employee;
+```
