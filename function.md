@@ -15,7 +15,7 @@ FROM employee;
 ```
 
 - [] find the number of female employees born after 1970
-- my answer was wrong
+- my answer was incorrect
 
 ```
 SELECT COUNT(sex)
@@ -46,9 +46,29 @@ FROM employee
 WHERE sex = 'M';
 ```
 
-- [] find the sum of all employees salaries
+- [x] find the sum of all employees salaries
 
 ```
 SELECT SUM(salary)
 FROM employee;
+```
+
+## AGGREGATION
+
+- [] find out how many males and females there are
+- use the GROUP BY clause when using aggregation
+- my answer was incorrect
+
+```
+SELECT COUNT(SUM(emp_id))
+FROM employee
+WHERE sex = 'F' AND sex = 'M';
+```
+
+- correct answer
+
+```
+SELECT COUNT(sex), sex
+FROM employee
+GROUP BY sex;
 ```
