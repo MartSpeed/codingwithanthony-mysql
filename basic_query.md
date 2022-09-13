@@ -54,7 +54,7 @@ FROM employee;
 ```
 
 - [x] find out all of the different genders
-- DISTINCT keyword used, what are the particular values that are stored in a specific column
+- DISTINCT keyword used; what are the particular values that are stored in a specific column
 
 ```
 SELECT DISTINCT sex
