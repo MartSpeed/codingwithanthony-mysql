@@ -1,23 +1,31 @@
 # basic query for company database
 
-- [] find all employees
+- [x] find all employees
 
 ```
 SELECT *
 FROM employee;
 ```
 
-- [] find all clients
+- [x] find all clients
 
 ```
 SELECT *
 FROM client;
 ```
 
-- find all employees ordered by salary
+- [x] find all employees ordered by salary
 
 ```
 SELECT *
 FROM employee
 ORDER BY salary;
+```
+
+- [x] find all employees ordered by sex and then name
+
+```
+SELECT *
+FROM employee
+ORDER BY sex, first_name, last_name;
 ```
