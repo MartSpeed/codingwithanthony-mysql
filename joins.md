@@ -1,1 +1,18 @@
 # mySQL joins
+
+<p>JOIN is used to combine rows from 2 or more tables based on a related column between them into a single result</p>
+
+## adding new branch VALUE
+
+```
+INSERT INTO branch VALUES(4, 'Buffalo', NULL, NULL);
+```
+
+- [] find all branches and the names of their managers
+
+```
+SELECT employee.emp_id, employee.first_name, branch.branch_name
+FROM employee
+JOIN branch
+ON employee.emp_id = branch.mgr_id;
+```
