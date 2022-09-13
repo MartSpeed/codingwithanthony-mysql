@@ -40,7 +40,7 @@ SET supplier_name = 'Stamford Labels'
 WHERE supplier_name = 'Stamford Lables';
 ```
 
-- [] find any employee born in october
+- [x] find any employee born in october
 - this query is correct
 
 ```
@@ -57,4 +57,12 @@ WHERE birth_day LIKE '%10%';
 SELECT *
 FROM employee
 WHERE birth_day LIKE '%____-10%';
+```
+
+- [] find any clients who are schools
+
+```
+SELECT *
+FROM client
+WHERE client_name LIKE '%school';
 ```
