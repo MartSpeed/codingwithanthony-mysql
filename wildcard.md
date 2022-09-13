@@ -32,10 +32,29 @@ FROM branch_supplier
 WHERE supplier_name LIKE '%label%';
 ```
 
-## UPDATE supplier name
+## UPDATE keyword for the supplier name
 
 ```
 UPDATE branch_supplier
 SET supplier_name = 'Stamford Labels'
 WHERE supplier_name = 'Stamford Lables';
+```
+
+- [] find any employee born in october
+- this query is correct
+
+```
+SELECT *
+FROM employee
+WHERE birth_day LIKE '%10%';
+```
+
+## find any employer born in october
+
+- this query is more correct
+
+```
+SELECT *
+FROM employee
+WHERE birth_day LIKE '%____-10%';
 ```
