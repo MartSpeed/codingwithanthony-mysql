@@ -1,4 +1,4 @@
-# basic query for company database
+# mySQL basic query for company database
 
 - [x] find all employees
 

@@ -80,3 +80,11 @@ SELECT SUM(total_sales), emp_id
 FROM works_with
 GROUP BY emp_id;
 ```
+
+- [x] find out how much money each client spent in the branch
+
+```
+SELECT SUM(total_sales), client_id
+FROM works_with
+GROUP BY client_id;
+```
