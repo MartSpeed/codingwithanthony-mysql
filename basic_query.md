@@ -38,9 +38,17 @@ FROM employee
 LIMIT 5;
 ```
 
-- [] find the first and last name of all employees
+- [x] find the first and last name of all employees
 
 ```
 SELECT first_name, last_name
+FROM employee;
+```
+
+- [x] find the forename and surnames of all employees
+- used alias keyword AS to name the table
+
+```
+SELECT first_name AS forename, last_name AS surname
 FROM employee;
 ```
