@@ -14,3 +14,28 @@ SELECT *
 FROM client
 WHERE client_name LIKE '%LLC';
 ```
+
+- [] find any branch suppliers who are in the label business
+- my answer was incorrect
+
+```
+SELECT *
+FROM branch_supplier
+WHERE supplier_name LIKE '%label';
+```
+
+- correct answer
+
+```
+SELECT *
+FROM branch_supplier
+WHERE supplier_name LIKE '%label%';
+```
+
+## UPDATE supplier name
+
+```
+UPDATE branch_supplier
+SET supplier_name = 'Stamford Labels'
+WHERE supplier_name = 'Stamford Lables';
+```
