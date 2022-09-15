@@ -47,4 +47,8 @@
 
 ## <u>**HANDLES ENTITY**</u>
 
-### a BRANCH may handle a number of CLIENTS, however a single CLIENT may only be handled by one BRANCH at a time
+### a BRANCH may handle any number of CLIENTS, however a single CLIENT may only be handled by one BRANCH at a time
+
+## <u>**WORKS_WITH ENTITY**</u>
+
+### EMPLOYEES can WORK WITH CLIENTS controlled by their branch to sell them stuff. if necessary multiple EMPLOYEES can work with the same CLIENT
