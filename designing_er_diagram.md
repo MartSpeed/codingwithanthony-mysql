@@ -44,3 +44,7 @@
 ## <u>**SUPERVISION ENTITY**</u>
 
 ### an EMPLOYEE can act as a supervisor for other EMPLOYEES at the branch, an EMPLOYEE may also act as a SUPERVISOR for EMPLOYEES at other branches. an EMPLOYEE can have at most one SUPERVISOR.
+
+## <u>**HANDLES ENTITY**</u>
+
+### a BRANCH may handle a number of CLIENTS, however a single CLIENT may only be handled by one BRANCH at a time
