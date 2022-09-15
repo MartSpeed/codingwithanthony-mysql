@@ -1,0 +1,3 @@
+# mySQL triggers
+
+- triggers are
