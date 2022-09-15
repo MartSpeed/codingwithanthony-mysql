@@ -4,6 +4,8 @@
 
 - advanced query writing
 
+- keep practicing the nested queries, find more examples in the mySQL book to use and test
+
 ## nested queries
 
 - [] find names of all employees who have sold over $30,000 to a single client
@@ -57,5 +59,19 @@ WHERE branch.mgr_id = 102;
 2. get all of the clients that are handled by that branch
 
 ```
+SELECT client.client_name
+FROM client
+WHERE client.branch_id = 2;
+```
 
+3. nest the 2nd query with the first query using the next query WHERE clause
+
+```
+SELECT client.client_name
+FROM client
+WHERE client.branch_id = (
+	SELECT branch.branch_id
+	FROM branch
+	WHERE branch.mgr_id = 102
+);
 ```
