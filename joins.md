@@ -17,11 +17,21 @@ JOIN branch
 ON employee.emp_id = branch.mgr_id;
 ```
 
-- [] LEFT JOIN, includes all of the rows from the LEFT table (the employee table)
+- [x] LEFT JOIN, includes all of the rows from the LEFT table (the employee table)
+- LEFT JOIN is the table in the FROM clause (employee table)
 
 ```
 SELECT employee.emp_id, employee.first_name, branch.branch_name
 FROM employee
 LEFT JOIN branch
+ON employee.emp_id = branch.mgr_id;
+```
+
+- [x] RIGHT JOIN, includes all of the rows from the RIGHT table (the branch table)
+
+```
+SELECT employee.emp_id, employee.first_name, branch.branch_name
+FROM employee
+RIGHT JOIN branch
 ON employee.emp_id = branch.mgr_id;
 ```
