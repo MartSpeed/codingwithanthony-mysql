@@ -4,6 +4,7 @@
 
 1. trigger_test can not have the same name, if trigger_test exist then you need to create a trigger_test1 or trigger_test_name_added
 2. the DELIMITER$$ changes the DELIMITER within the parameters to be the double $$ from the DELIMITER ;, that is why we set it in the command, then we END$$ the DELIMITER with the sane value and then set the DELIMITER ; back to the its original DELIMITER using the semicolon
+3. triggers can be used with the other clauses, UPDATE, BEFORE, AFTER etc.
 
 ```
 CREATE TABLE trigger_test(
@@ -105,3 +106,8 @@ FROM trigger_test
 ```
 
 - test successful
+- you can also drop triggers that you have created
+
+```
+DROP TRIGGER my_trigger;
+```
