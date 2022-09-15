@@ -8,3 +8,8 @@
 4. **COMPOSITE ATTRIBUTES**: an attribute that can be broken up into sub-attributes <u>**STUDENT_ID**</u>, fname, lname, name(fname + lname), GPA **VALUES** into the **STUDENT ENTITY**
 5. **MULTI_VALUES ATTRIBUTE**: an attribute that can have more than one value
 6. **DERIVED ATTRIBUTE**: an attribute that can be derived from the other attributes
+7. **MULTIPLE ENTITIES**: you can define more than one entity in the diagram
+8. **RELATIONSHIPS**: defines a relationship between two entities
+9. **TOTAL PARTICIPATION**: all the members must participate in the relationship
+
+![ER student diagram example](ER-diagram-student.png);
