@@ -28,6 +28,7 @@ ON employee.emp_id = branch.mgr_id;
 ```
 
 - [x] RIGHT JOIN, includes all of the rows from the RIGHT table (the branch table)
+- RIGHT JOIN is the table in the JOIN clause (branch table)
 
 ```
 SELECT employee.emp_id, employee.first_name, branch.branch_name
@@ -35,3 +36,5 @@ FROM employee
 RIGHT JOIN branch
 ON employee.emp_id = branch.mgr_id;
 ```
+
+- the last join is a FULL OUTER JOIN, which displays all of the rows from the left and right tables. mySQL does not support the FULL OUTER JOIN.
