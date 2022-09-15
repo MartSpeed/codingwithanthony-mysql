@@ -57,3 +57,15 @@ DELIMITER ;
 ```
 
 ### new employee being inserted for trigger_test
+
+```
+INSERT INTO employee
+VALUES(110, 'Kevin', 'Malone', '1978-02-19', '', 69000, 106, 3);
+```
+
+### checking trigger_test1 work
+
+```
+SELECT *
+FROM trigger_test;
+```
