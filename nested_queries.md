@@ -7,9 +7,11 @@
 ## nested queries
 
 - [] find names of all employees who have sold over $30,000 to a single client
-- 1. query all employees that have sold over 30,000 to a single client
-- 2. get employees first_name & last_name
-- 3. select all employee.emp_id from the works_with.emp_id
+
+1. query all employees that have sold over 30,000 to a single client
+2. get employees first_name & last_name
+3. select all employee.emp_id from the works_with.emp_id
+
 - my answer was incorrect
 
 ```
@@ -33,3 +35,27 @@ WHERE employee.emp_id IN (
 ```
 
 - [] find all client who are handled by the branch that Michael Scott manages. Assume you know Michael's ID
+
+1. what branch does Michael Scott manage
+
+- incorrect answer
+
+```
+SELECT employee.branch_id
+FROM employee
+WHERE first_name = 'Michael';
+```
+
+- correct answer
+
+```
+SELECT branch.branch_id
+FROM branch
+WHERE branch.mgr_id = 102;
+```
+
+2. get all of the clients that are handled by that branch
+
+```
+
+```
