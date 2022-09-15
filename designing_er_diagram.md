@@ -2,20 +2,45 @@
 
 - describes all the different data and the relationships between those pieces of information
 
-## BRANCH ENTITY
+## **<u>BRANCH ENTITY</u>**
 
 ### the company is organized into **BRANCHES**. each **BRANCH** has a unique number, and a name
 
 - [] create branch table
 - [] create branch values
-- [] branch_id PRIMARY KEY
+- [] <u>branch_id PRIMARY KEY</u>
 - [] branch_name VARCHAR(40)
 
-## CLIENT ENTITY
+## **<u>CLIENT ENTITY</u>**
 
 ### the company makes it's money by selling to **CLIENTS**. each **CLIENT** has a name and a unique number to identify it.
 
 - [] create client table
 - [] create client values
-- [] client_id PRIMARY KEY
+- [] <u>client_id PRIMARY KEY</u>
 - [] client_name VARCHAR(40)
+
+## **<u>EMPLOYEE ENTITY</u>**
+
+### the foundation of the company is its EMPLOYEES, each EMPLOYEE has a unique name, birthday, sex, salary and a unique number to identify it.
+
+- [] create employee table
+- [] create employee values
+- [] <u>emp_id PRIMARY KEY</u>
+- [] first_name VARCHAR(40)
+- [] last_name VARCHAR(40)
+- [] birthday DATE
+- [] sex VARCHAR(1)
+- [] salary INT
+
+## <u>**WORKS_FOR ENTITY**</u>
+
+### an employee can work for one BRANCH at a time
+
+## <u>**MANAGES ENTITY**</u>
+
+### each branch will be MANAGED by one of the EMPLOYEES that work there. we'll also want to keep track of when the current manager started as a manager
+
+## <u>**SUPERVISION ENTITY**</u>
+
+### an EMPLOYEE can act as a supervisor for other EMPLOYEES at the branch, an EMPLOYEE may also act as a SUPERVISOR for EMPLOYEES at other branches. an EMPLOYEE can have at most one SUPERVISOR.
