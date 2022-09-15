@@ -52,3 +52,7 @@
 ## <u>**WORKS_WITH ENTITY**</u>
 
 ### EMPLOYEES can WORK WITH CLIENTS controlled by their branch to sell them stuff. if necessary multiple EMPLOYEES can work with the same CLIENT
+
+## Company ER diagram
+
+![Company Entity Relationship Diagram](ER-diagram-student.png)
