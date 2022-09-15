@@ -53,6 +53,12 @@
 
 ### EMPLOYEES can WORK WITH CLIENTS controlled by their branch to sell them stuff. if necessary multiple EMPLOYEES can work with the same CLIENT
 
+- we will want to keep track of how many dollars (SALES) worth of stuff each EMPLOYEE sells to each CLIENT they work with
+
+## <u>**BRANCH_SUPPLIER ENTITY**</u>
+
+### many BRANCHES will need to work wit suppliers to buy inventory. for each SUPPLIER we'll need to keep track of their _NAME_ and the _TYPE OF PRODUCT_ theyre selling the BRANCH. a single SUPPLIER may supply products to multiple BRANCHES
+
 ## Company ER diagram
 
 ![Company Entity Relationship Diagram](company-erd.png)
