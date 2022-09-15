@@ -11,5 +11,9 @@
 7. **MULTIPLE ENTITIES**: you can define more than one entity in the diagram
 8. **RELATIONSHIPS**: defines a relationship between two entities
 9. **TOTAL PARTICIPATION**: all the members must participate in the relationship
+10. **RELATIONSHIP ATTRIBUTE**: an attribute about the relationship
+11. **RELATIONSHIP CARDINALITY**: the number of instances of an entity from a relation that can be associated with the relation
+12. **WEAK ENTITY**: an entity that cannot be uniquely identified by its attributes alone
+13. **IDENTIFYING RELATIONSHIP**: a relationship that serves to uniquely identify the weak entity
 
-![ER student diagram example](ER-diagram-student.png);
+![ER student diagram example](ER-diagram-student.png)
