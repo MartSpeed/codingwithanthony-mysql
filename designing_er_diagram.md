@@ -55,4 +55,4 @@
 
 ## Company ER diagram
 
-![Company Entity Relationship Diagram](ER-diagram-student.png)
+![Company Entity Relationship Diagram](company-erd.png)
