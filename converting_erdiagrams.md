@@ -60,3 +60,26 @@ CREATE TABLE branch(
   FOREIGN KEY(mgr_id) REFERENCES employee.emp_id
 );
 ```
+
+## STEP 4: mapping of binary 1:N relationship types
+
+- include the 1 side's primary key as a foreign key on the N side relation (table)
+
+```
+CREATE TABLE employee(
+  emp_id INT PRIMARY KEY,
+  first_name VARCHAR(40),
+  last_name VARCHAR(40),
+  birth_date DATE,
+  sex VARCHAR(1),
+  salary INT,
+  FOREIGN KEY(super_id) REFERENCES emp_id
+  FOREIGN KEY(branch_id) REFERENCES branch.branch_id
+);
+
+CREATE TABLE client(
+  client_id INT PRIMARY KEY
+  client_name VARCHAR(40),
+  FOREIGN KEY(client.branch_id) REFERENCES branch.branch_id
+);
+```
