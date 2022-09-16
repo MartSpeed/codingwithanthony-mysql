@@ -95,3 +95,5 @@ CREATE TABLE works_on(
   total_sales INT
 );
 ```
+
+![company database mapping](company-relations.png)
