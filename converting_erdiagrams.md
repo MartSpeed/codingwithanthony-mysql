@@ -35,7 +35,7 @@ CREATE TABLE branch(
 );
 ```
 
-# STEP 2: mapping of weak entity types
+## STEP 2: mapping of weak entity types
 
 - for each weak entity type create a relation (table) that includes all simple attributes of the weak entity
 - the primary key of the new relation should be the partial key of the weak entity plus the primary ket of its owner
@@ -45,5 +45,18 @@ CREATE TABLE branch_supplier(
   supplier_name VARCHAR(40) PRIMARY KEY,
   supply_type VARCHAR(40),
   FOREIGN KEY(branch_id) REFERENCES branch.branch_id
+);
+```
+
+## STEP 3: mapping of binary 1:! relationship types
+
+- include one side of the relationship as a foreign key in the other favor total participation
+
+```
+CREATE TABLE branch(
+  branch_id INT PRIMARY KEY,
+  branch_name VARCHAR(40),
+  mgr_start_date DATE,
+  FOREIGN KEY(mgr_id) REFERENCES employee.emp_id
 );
 ```
