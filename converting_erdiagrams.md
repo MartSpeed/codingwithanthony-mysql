@@ -34,3 +34,16 @@ CREATE TABLE branch(
   branch_name VARCHAR(40),
 );
 ```
+
+# STEP 2: mapping of weak entity types
+
+- for each weak entity type create a relation (table) that includes all simple attributes of the weak entity
+- the primary key of the new relation should be the partial key of the weak entity plus the primary ket of its owner
+
+```
+CREATE TABLE branch_supplier(
+  supplier_name VARCHAR(40) PRIMARY KEY,
+  supply_type VARCHAR(40),
+  FOREIGN KEY(branch_id) REFERENCES branch.branch_id
+);
+```
