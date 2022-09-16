@@ -83,3 +83,15 @@ CREATE TABLE client(
   FOREIGN KEY(client.branch_id) REFERENCES branch.branch_id
 );
 ```
+
+## STEP 5: mapping of binary M:N relationship types
+
+- create a new relation (table) who's primary key is a combination of both entities primary key's. also include any relationship attributes
+
+```
+CREATE TABLE works_on(
+  employee.emp_id INT PRIMARY KEY,
+  client.client_id INT PRIMARY KEY,
+  total_sales INT
+);
+```
